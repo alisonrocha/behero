@@ -1,0 +1,20 @@
+@import './../styles/global.scss';
+
+header.container {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+
+  a {
+    color: $black;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 700px){
+    height: 3rem;
+    a{
+      font-size: 1.8rem;
+    }
+  }
+}

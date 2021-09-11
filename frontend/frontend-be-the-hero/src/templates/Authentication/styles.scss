@@ -1,0 +1,115 @@
+@import './../../components/styles/global.scss';
+
+.view-authentication {
+  position: relative;
+
+  main {
+    display: flex;
+    align-items: center;
+
+    .login-img {
+      width: 100%;
+      img {
+        max-width: 27rem;
+      }
+    }
+
+    .login-forms {
+      width: 100%;
+      padding: 0 3rem;
+
+      p {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+
+        strong {
+          color: $red !important;
+        }
+      }
+
+      form {
+        a {
+          color: $red;
+          padding-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .ball {
+    width: 18.2rem;
+    height: 18.2rem;
+    background: $red;
+    clip-path: circle();
+    opacity: 0.1;
+
+    position: fixed;
+  }
+
+  .ball.top {
+    top: -50rem;
+    width: 63.3rem;
+    right: -35rem;
+    height: 60.3rem;
+  }
+
+  .ball.bottom {
+    bottom: -11rem;
+    right: 5.6rem;
+  }
+
+  @media (max-width: 900px) {
+    .container {
+      padding-top: 3rem;
+    }
+
+    main {
+      .login-img img {
+        width: 20rem;
+      }
+
+      .login-forms {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      margin-top: 3rem;
+    }
+
+    main {
+      .login-img {
+        width: 0;
+        img {
+          display: none;
+        }
+      }
+
+      .login-forms {
+        width: 100%;
+        padding: 0    ;
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .ball {
+      width: 10rem;
+    }
+
+    .ball.top {
+      width: 14rem;
+      top: -31rem;
+      right: -7rem;
+    }
+
+    .ball.bottom {
+      bottom: -11rem;
+      right: 14rem;
+    }
+  }
+}

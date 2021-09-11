@@ -1,0 +1,15 @@
+@import './../../components/styles/global.scss';
+
+button {
+  width: 23rem;
+  background: $red;
+  height: 3rem;
+  border-radius: 8px;
+  color: $white;
+  cursor: pointer;
+  margin-top: 1.5rem;
+
+  @media (max-width: 700px){
+    width: 100%;
+  }
+}

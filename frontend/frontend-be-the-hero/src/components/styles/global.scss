@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*VARIAVÉIS*/
+$black: #0f0d0d;
+$white: #fafafa;
+$red: #f44336;
+$font-family-poppins: 'Poppins';
+
+body {
+  background-color: $white;
+  font-family: $font-family-poppins;
+
+  /* 1rem = 16px (User Agent) = 100% (User Agent) */
+  font-size: 62.5%; /* 10px */
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+body,
+input,
+button,
+textarea {
+  /*intervalo de tamanho. O menor tamanho de tela vai chegar a 14px. O padrão é 1.6rem e para maior altura de tela 2vw - Boa prática */
+  font-size: clamp(14px, 1rem, 2vw);
+
+  font-family: $font-family-poppins;
+}
